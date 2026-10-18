@@ -1,23 +1,19 @@
 {
   "name": "automatizador-arte-plugin",
   "version": "1.0.0",
-  "description": "Plugin para inspeção e otimização de artes gráficas",
+  "description": "Pipeline de inspeção e otimização de artes gráficas",
   "main": "index.js",
-  "author": "Seu Nome",
+  "author": "brunoparentearq",
   "license": "MIT",
-  "permissions": ["filesystem_read", "subprocess_execute"],
-  "ui": {
-    "panel": true,
-    "buttons": [
+  "dsh": {
+    "displayName": "Automatizador Arte",
+    "icon": "image",
+    "capabilities": ["panel", "command"],
+    "panels": [
       {
-        "id": "analyze_image",
-        "label": "Analisar Imagem",
-        "action": "analyzeImage"
-      },
-      {
-        "id": "consult_ai",
-        "label": "Consultar IA",
-        "action": "consultAI"
+        "id": "automatizador-panel",
+        "title": "Automatizador Arte",
+        "view": "sidebar"
       }
     ]
   }
