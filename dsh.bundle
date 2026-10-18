@@ -1,0 +1,24 @@
+{
+  "name": "automatizador-arte-plugin",
+  "version": "1.0.0",
+  "description": "Plugin para inspeção e otimização de artes gráficas",
+  "main": "index.js",
+  "author": "Seu Nome",
+  "license": "MIT",
+  "permissions": ["filesystem_read", "subprocess_execute"],
+  "ui": {
+    "panel": true,
+    "buttons": [
+      {
+        "id": "analyze_image",
+        "label": "Analisar Imagem",
+        "action": "analyzeImage"
+      },
+      {
+        "id": "consult_ai",
+        "label": "Consultar IA",
+        "action": "consultAI"
+      }
+    ]
+  }
+}
